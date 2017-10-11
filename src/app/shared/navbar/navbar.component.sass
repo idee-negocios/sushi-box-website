@@ -1,0 +1,57 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap"
+@import "../../../colors.sass"
+
+.navbar
+    img  
+        width: 8rem
+        height: 8rem
+        position: absolute
+        top: 55%
+        left: 12%
+        z-index: 1
+    .navbar-collapse
+        .navbar-nav
+            display: flex
+            justify-content: center
+            padding-left: 30%
+            font-size: 2rem
+            li > a
+                color: $light-gray
+            li > a:hover
+                color: $light-brown
+            
+    .form-inline
+        background-color: $dark-gray
+        button  
+            border: none
+        input   
+            background-color: $dark-gray
+            color: white
+            border: none
+            margin-left: -1px
+
+.separator
+    width: 80%;
+    height: 3px;
+    background-color: $dark-gray;
+    position: relative;
+    left: 10%
+    margin-top: 1rem
+    .circle1, .circle2
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border: solid 3px $dark-gray;
+        border-radius: 50%;
+        position: absolute;
+        top: -3.5px;
+        left: calc(0% - 18px);
+    .circle1
+        left: calc(0% - 18px);
+    .circle2
+        left: calc(100% + 8px);
+
+.active-link
+    color: $light-brown !important

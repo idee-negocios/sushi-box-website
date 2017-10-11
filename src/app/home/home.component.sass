@@ -1,0 +1,85 @@
+@import '../../colors.sass'
+@import '../../../node_modules/bootstrap/scss/bootstrap'
+.wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    margin-top: 1rem
+    .header
+        h1  
+            font-size: 2rem
+            margin-bottom: 0px
+        hr.separator
+            margin-left: 21%
+            width: 67%
+            border: none
+            border-top: 3px dashed $dark-gray
+    .promotions
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin-top: 1rem
+        .image1  
+            margin: 0px 0.4rem 0rem -0.5rem
+        .image2  
+            margin: 0px 0.8rem
+    .plates
+        margin-top: 1rem
+        .title           
+            width: 80%;
+            height: 2rem;
+            position: relative;
+            left: 10%
+            margin-top: 1rem
+            h3  
+                display: inline-block
+            .circle1, .circle2
+                display: inline-block;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                border: solid 3px $dark-gray;
+                border-radius: 50%;
+                position: absolute;
+                top: 0.8rem;
+            .circle1
+                left: calc(42% - 18px);
+            .circle2
+                left: calc(58% + 8px);
+
+    .map
+        display: flex
+        flex-direction: row
+        justify-content: center
+        .image1
+            margin: 0px 0.4rem 0rem 0rem
+        .image2
+            margin: 0px 0.7rem
+
+.leftRs 
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 999px;
+    left: 0;   
+
+.rightRs 
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 999px;
+    right: 0;
+
+.ngxcarouselitem
+    border-radius: 50%
+    

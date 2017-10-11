@@ -1,3 +1,28 @@
-<p>
-  home works!
-</p>
+<div class="wrapper">
+  <div class="header">
+    <h1>Delivery de Sushi en Mendoza</h1>
+    <hr class="separator">
+  </div>
+  <div class="promotions">
+    <img class="image1" src="/assets/images/promo1.png">
+    <img class="image2" src="/assets/images/promo2.png">
+  </div>
+  <div class="plates">
+    <div class="title">
+      <div class="circle1"></div>
+      <h3>Recomendados</h3>
+      <div class="circle2"></div>
+    </div>
+    <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
+      <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+          <img src="http://via.placeholder.com/350x150" alt="">
+      </ngx-tile>
+      <button NgxCarouselPrev class='leftRs'>&lt;</button>
+      <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
+  </div>
+  <div class="map">
+    <img class="image1" src="/assets/images/mapa.png">
+    <img class="image2" src="/assets/images/contacto.png">
+  </div>
+</div>
