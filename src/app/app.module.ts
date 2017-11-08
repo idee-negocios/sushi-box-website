@@ -12,7 +12,8 @@ import { MenuComponent } from './menu/menu.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 // Carousel
-import { CarouselModule } from 'angular4-carousel';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { CarouselModule } from 'angular4-carousel';
   ],
   imports: [
     BrowserModule,
-    CarouselModule,
+    NgxCarouselModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

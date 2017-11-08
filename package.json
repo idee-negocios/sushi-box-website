@@ -21,7 +21,6 @@
     "@angular/platform-browser": "^4.3.5",
     "@angular/platform-browser-dynamic": "^4.3.5",
     "@angular/router": "^4.3.5",
-    "angular4-carousel": "^3.1.8",
     "bootstrap": "^4.0.0-beta",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",

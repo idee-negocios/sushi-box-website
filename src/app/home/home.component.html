@@ -1,5 +1,15 @@
 <div class="wrapper">    
-    <carousel [sources]="imageSources" [config]="config"></carousel>
+        <ngx-carousel
+        [inputs]="carouselTile"
+        (carouselLoad)="carouselTileLoad($event)">   
+              <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                    <img src="/assets/images/{{Tile}}.png" alt="">
+              </ngx-tile>
+            <button NgxCarouselPrev class='leftRs'>&lt;</button>
+            <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
+        
+
     <div class="line"></div>
     <div class="suggestions">
         <img src="/assets/images/suggestions.png" alt="">
