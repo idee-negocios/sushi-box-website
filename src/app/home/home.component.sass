@@ -1,9 +1,7 @@
 @import "../../colors.sass"
 
 .wrapper
-    .delivery
-        height: 30rem
-        background: $dark-gray
+    font-family: Helvetica
     .line
         width: 100%
         height: 0.5rem
@@ -18,6 +16,9 @@
             height: 0.25rem
             background-color: $light-brown
             width: 25rem
+        img
+            width: 100%
+            height: auto
         h3 
             color: $light-brown
             margin: 0px 1rem
@@ -46,6 +47,7 @@
             right: 0px
     .map
         background-color: $dark-blue
+
         .header
             text-align: center
             color: white
@@ -53,20 +55,43 @@
             padding: 1rem 0rem
             h3  
                 margin: 0px
+                font-weight: normal
         .content
             display: flex
-            flex-direction: row
-            .text
+            flex-direction: column
+            .sections
                 display: flex
-                flex-direction: column
+                flex-direction: row
                 color: white
-                margin-top: -1.7rem
+                margin-top: 1rem
                 margin-left: 3rem
                 line-height: 0.5
                 font-size: 1.5rem
-                .item
-                    .icon
-                        display: inline-block
-                    .text
-                        display: inline-block
-                
+                h4
+                    font-weight: normal
+                .social
+                    .row1, .row2
+                        display: flex
+                        flex-direction: row
+                        .image
+                            margin-left: 1rem
+                            margin-top: 1rem
+                            img 
+                                width: 4rem
+                                height: auto
+                        
+                .contact
+                    margin-left: 12rem
+                    .item      
+                        .icon
+                            display: inline-block
+                        .text
+                            display: inline-block
+                            margin-top: -1.7rem
+                    .item1 
+                        margin-left: -4px
+                    .item2
+                        margin-left: 4px
+
+                .time
+                    margin-left: 10rem

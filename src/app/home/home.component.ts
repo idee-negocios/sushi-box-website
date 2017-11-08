@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Carousel
-import { NgxCarousel } from 'ngx-carousel';
+import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
 
 @Component({
   selector: 'app-home',
@@ -9,31 +9,24 @@ import { NgxCarousel } from 'ngx-carousel';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  public carouselTileItems: Array<any>;
-  public carouselTile: NgxCarousel;
 
-  constructor() { }
+  public imageSources: string[] = [
+    'path to img1',
+    'path to img2',
+    'path to img3'
+ ];
+ 
+  public config: ICarouselConfig = {
+    verifyBeforeLoad: true,
+    log: false,
+    animation: true,
+    animationType: AnimationConfig.SLIDE,
+    autoplay: true,
+    autoplayDelay: 2000,
+    stopAutoplayMinWidth: 768
+  };
 
   ngOnInit() {
-    this.carouselTileItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-    this.carouselTile = {
-      grid: {xs: 2, sm: 3, md: 3, lg: 3, all: 0},
-      slide: 2,
-      speed: 400,
-      animation: 'lazy',
-      point: true,
-      load: 2,
-      touch: true,
-      easing: 'ease'
-    };
-  }
 
-  public carouselTileLoad(evt: any) {
-    const len = this.carouselTileItems.length;
-    if (len <= 30) {
-      for (let i = len; i < len + 10; i++) {
-        this.carouselTileItems.push(i);
-      }
-    }
   }
 }
