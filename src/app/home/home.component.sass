@@ -2,9 +2,13 @@
 
 .wrapper
     font-family: Helvetica
-    ngx-carousel        
-        .leftRs, .rightRs
-            display: none
+    
+    ngx-carousel
+        .ngxcarouselPointDefault
+            background-color: black      
+        .button
+            visibility: hidden
+
     ngx-tile
         img
             background-color: #ccc
@@ -58,8 +62,11 @@
                 font-size: 1.5rem
                 h4
                     font-weight: normal
-                .social
-                    .row1, .row2
+                .social                    
+                    display: flex
+                    flex-direction: column
+                    margin-top: 4rem
+                    .logos
                         display: flex
                         flex-direction: row
                         .image
@@ -68,6 +75,13 @@
                             img 
                                 width: 4rem
                                 height: auto
+                    .rights
+                        display: flex
+                        flex-direction: column
+                        margin-top: 2rem
+                        margin-left: 1rem
+                        p  
+                            margin-top: 0px
                         
                 .contact
                     margin-left: 12rem
@@ -84,3 +98,9 @@
 
                 .time
                     margin-left: 10rem
+                .brand
+                    margin-top: 6rem
+                    margin-left: 7rem
+                    img  
+                        height: 10rem
+                        width: auto
