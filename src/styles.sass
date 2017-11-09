@@ -1,8 +1,12 @@
 $fa-font-path: '../node_modules/font-awesome/fonts'
 @import "~font-awesome/scss/font-awesome";
+@import "./responsive.sass"
 
 body  
     margin: 0px
 
 
-
+.ngxcarouselPointDefault
+    @include laptop
+        margin-top: -3.5rem !important
+        margin-bottom: -1rem
