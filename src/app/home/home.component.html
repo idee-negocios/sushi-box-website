@@ -1,4 +1,6 @@
 <div class="wrapper">
+
+  <!-- Carousel -->
   <ngx-carousel [inputs]="carouselTile">
     <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
       <img src="/assets/images/{{Tile}}.png" alt="">
@@ -6,10 +8,15 @@
     <button NgxCarouselPrev class='leftRs button'>&lt;</button>
     <button NgxCarouselNext class='rightRs button'>&gt;</button>
   </ngx-carousel>
+
+  <!-- Separator -->
   <div class="h1">
+    <div class="line1"></div>
     <h1>SUSHI DELIVERY EN MENDOZA 4243338 - 155370220</h1>
+    <div class="line2"></div>
   </div>
-  <div class="line"></div>
+
+  <!-- Footer -->
   <div class="map">
     <div class="header">
       <h3>Encontranos donde estés</h3>

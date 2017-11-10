@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Carousel
-import { NgxCarousel, NgxCarouselStore } from 'ngx-carousel';
+import { NgxCarousel } from 'ngx-carousel';
 
 @Component({
   selector: 'app-home',
