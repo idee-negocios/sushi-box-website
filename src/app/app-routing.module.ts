@@ -7,9 +7,8 @@ import { PromotionsComponent } from './promotions/promotions.component';
 import { SushiboxComponent } from './sushibox/sushibox.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'carta', component: MenuComponent },
-    { path: 'promociones', component: PromotionsComponent },
-    { path: 'sushibox', component: SushiboxComponent }
-  ];
+  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: 'carta', component: MenuComponent },
+  { path: 'promociones', component: PromotionsComponent },
+  { path: 'sushibox', component: SushiboxComponent }
+];
