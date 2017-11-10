@@ -70,9 +70,11 @@
             padding: 1rem 0rem
             h3
                 margin: 0px
-                font-weight: normal
+                font-weight: bold
+                font-size: 1.6rem
         .content
             display: flex
+            justify-content: center
             flex-direction: column
             iframe
                 @include laptop
@@ -80,14 +82,11 @@
             .sections
                 display: flex
                 flex-direction: row
+                justify-content: space-around
+                align-items: center
                 color: white
-                line-height: 0.5
                 font-size: 1.5rem
-                @include laptop
-                    font-size: 1.2rem
-                @include mobile
-                    font-size: 1rem
-                    flex-direction: column
+                padding: 3rem 2rem 5rem 2rem;
                 h4
                     font-weight: normal
                     @include laptop
@@ -97,13 +96,6 @@
                 .social
                     display: flex
                     flex-direction: column
-                    margin-top: 4rem
-                    margin-left: 6rem
-                    @include laptop
-                        margin-left: 2rem
-                    @include mobile
-                        margin-left: 0rem
-                        margin-top: 2rem
                     .logos
                         display: flex
                         flex-direction: row
@@ -116,46 +108,40 @@
                                 @include mobile
                                     width: 2rem
                     .rights
-                        display: flex
-                        flex-direction: column
                         margin-top: 2rem
-                        margin-left: 1rem
                         p
-                            margin-top: 0px
+                          font-size: 1rem
+                          text-align: center
+                          diplay: block
+                          margin: 0
 
                 .contact
-                    margin-left: 16rem
-                    @include laptop
-                        margin-left: 8rem
-                    @include mobile
-                        margin-left: 1rem
+                    h4
+                      font-size: 1.2rem;
+                      margin: 0
+                      font-weight: bold
+                      margin-left: 38px
                     .item
                         .icon
+                            min-width: 30px
                             display: inline-block
                         .text
                             display: inline-block
-                            margin-top: -1.7rem
-                    .item1
-                        margin-left: -4px
-                    .item2
-                        margin-left: 4px
+                            p
+                              margin: 5px 0
+                              font-size: 1rem
 
                 .time
-                    margin-left: 18rem
-                    @include laptop
-                        margin-left: 8rem
-                    @include mobile
-                        margin-left: 1rem
+                  min-width: 20%
+                  h4
+                    font-size: 1.2rem;
+                    margin: 0
+                  p
+                    margin: 5px 0
+                    font-size: 1rem
                 .brand
-                    margin-top: 6rem
-                    margin-left: 12rem
-                    @include laptop
-                        margin-top: 3.7rem
-                        margin-left: 10rem
-                    @include mobile
-                        position: absolute
-                        margin-top: 25rem
-                        margin-left: 16rem
-                    img
-                        height: 10rem
-                        width: auto
+                  position: absolute
+                  right: 15px
+                  img
+                      height: 10rem
+                      width: auto
