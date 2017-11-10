@@ -5,8 +5,11 @@ $fa-font-path: '../node_modules/font-awesome/fonts'
 body  
     margin: 0px
 
-
 .ngxcarouselPointDefault
+    margin-top: 1rem
     @include laptop
         margin-top: -3.5rem !important
         margin-bottom: -1rem
+    @include mobile
+        margin-top: 1rem !important
+        margin-bottom: 2rem

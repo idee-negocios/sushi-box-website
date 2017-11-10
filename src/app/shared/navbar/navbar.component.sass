@@ -5,13 +5,19 @@
     width: 100%
     height: 0.5rem
     background-color: $light-brown
+    @include mobile
+        display: none
 .navbar
     background-color: white !important
     margin-top: 2rem
+    margin-bottom: 2rem
     height: 7rem
     font-family: Helvetica
     @include laptop
         height: 6rem
+        margin-bottom: 0rem
+    @include mobile
+        display: none
     img  
         width: 6rem
         height: 6rem
