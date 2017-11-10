@@ -4,6 +4,12 @@
     <img src="/assets/images/isotipo.png">
   </div>
   <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="search-form form-inline mb-3">
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+      <button type="button" class="btn btn-secondary">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/']" routerLinkActive="active-link">Home</a>
@@ -18,11 +24,5 @@
           <a class="nav-link" [routerLink]="['/']">Sushibox</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button type="button" class="btn btn-secondary">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </button>
-      <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-    </form>
   </div>
 </nav>

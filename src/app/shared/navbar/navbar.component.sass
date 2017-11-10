@@ -22,27 +22,34 @@
             width: 6rem
             height: 6rem
     .menu
-        .navbar-nav
-            display: flex
-            justify-content: center
-            font-size: 1rem
-            font-weight: bold
-            text-transform: uppercase
-            li > a
-                color: $light-black
-                padding: 1rem
-            li > a:hover
-                background-color: $light-black
-                color: #fff
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      padding-right: 5%
 
-    .form-inline
-        background-color: #868e96
+      .navbar-nav
+          display: flex
+          justify-content: center
+          font-size: 1rem
+          font-weight: bold
+          text-transform: uppercase
+          li > a
+              color: $light-black
+              padding: 1rem
+              margin-right: 0.8rem
+          li > a:hover
+              background-color: $light-black
+              color: #fff
+
+    .search-form
         button
-            border: none
+            background-color: #eee
+            color: #000
+            border: 1px solid #000
         input
-            background-color: #868e96
+            background-color: #eee
             color: #fff
-            border: none
+            border: 1px solid #000
 
 .separator
     width: 80%;
