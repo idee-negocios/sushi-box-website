@@ -18,13 +18,15 @@
             @include laptop
                 height: auto
             @include mobile
-                height: 16rem
+                height: 10rem
     .h1
         background-color: $light-black
         color: white
         margin-bottom: 0rem
         text-align: center
-        padding-top: 5px;
+        padding-top: 5px
+        @include mobile
+            margin-top: 3.7rem
         h1
             margin: 0
             padding: 1rem 0rem
@@ -35,10 +37,10 @@
                 font-size: 1.5rem
                 padding: 1rem 0rem
         .line1
-            width: 100%;
-            height: 0.2rem;
-            border-top: 1px solid $light-brown;
-            border-bottom: 1px dashed $light-brown;
+            width: 100%
+            height: 0.2rem
+            border-top: 1px solid $light-brown
+            border-bottom: 1px dashed $light-brown
         .line2
             width: 100%
             height: 0.5rem
@@ -79,6 +81,9 @@
             iframe
                 @include laptop
                     height: 300
+                @include mobile
+                    height: 15rem
+                    width: 100%
             .sections
                 display: flex
                 flex-direction: row
@@ -86,9 +91,10 @@
                 align-items: center
                 color: white
                 font-size: 1.5rem
-                padding: 3rem 2rem 5rem 2rem;
+                padding: 3rem 2rem 5rem 2rem
                 @include mobile
                     flex-direction: column
+                    display: none
                 h4
                     font-weight: normal
                     @include laptop
@@ -126,7 +132,7 @@
                     @include mobile
                         text-align: center
                     h4
-                      font-size: 1.2rem;
+                      font-size: 1.2rem
                       margin: 0
                       font-weight: bold
                       margin-left: 38px
@@ -149,7 +155,7 @@
                     margin-top: 1rem
                     margin-bottom: 0rem
                   h4
-                    font-size: 1.2rem;
+                    font-size: 1.2rem
                     margin: 0
                     font-weight: bold
                   p
@@ -165,3 +171,74 @@
                   img
                       height: 10rem
                       width: auto
+                
+            .sections-mobile
+                display: flex
+                flex-direction: column
+                align-items: center
+                color: white
+                @include laptop
+                    display: none
+                @include desktop
+                    display: none
+                h4
+                    font-weight: normal
+                    font-size: 1rem                
+                .time-social-mobile
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    margin-top: 1rem
+                    .logos-mobile
+                        display: flex
+                        flex-direction: column
+                        align-content: center
+                        margin-left: 1rem
+                        margin-top: 1.2rem
+                        .image-mobile
+                            margin-left: 1rem
+                            margin-top: 0.5rem
+                            img
+                                width: 2rem
+                                height: auto
+                    .time-mobile
+                        min-width: 20%
+                        text-align: center
+                        margin-top: 1rem
+                        margin-bottom: 0rem
+                        h4
+                            font-size: 1.2rem
+                            margin: 0
+                            font-weight: bold
+                        p
+                            margin: 5px 0
+                            font-size: 1rem 
+                .contact-mobile
+                    text-align: center
+                    margin-top: 1rem
+                    h4
+                        font-size: 1.2rem
+                        font-weight: bold
+                        margin: 0
+                    .item-mobile
+                        .icon-mobile
+                            min-width: 30px
+                            display: inline-block
+                        .text-mobile
+                            display: inline-block
+                            p
+                              margin: 5px 0
+                              font-size: 1rem
+                .rights-mobile
+                    margin: 1rem 0rem
+                    p
+                        font-size: 1rem
+                        text-align: center
+                        diplay: block
+                        margin: 0                
+                .brand-mobile
+                    margin-top: -3.5rem
+                    transform: rotate(90deg)
+                    img
+                        height: 10rem
+                        width: auto
