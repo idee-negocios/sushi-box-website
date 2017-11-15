@@ -2,241 +2,289 @@
 @import "../../responsive.sass"
 
 .wrapper
-    font-family: Helvetica
+  font-family: Myriad
 
-    ngx-carousel
-        .button
-            visibility: hidden
+  ngx-carousel
+    .button
+      visibility: hidden
 
-    ngx-tile
-        img
-            background-color: #ccc
-            height: 36rem
-            width: 100%
-            text-align: center
-            line-height: 300px
-            @include laptop
-                height: auto
-            @include mobile
-                height: 10rem
-    .h1
-        background-color: $light-black
-        color: white
-        margin-bottom: 0rem
-        text-align: center
-        padding-top: 5px
+  ngx-tile
+    img
+      background-color: #ccc
+      height: 36rem
+      width: 100%
+      text-align: center
+      line-height: 300px
+      @include laptop
+        height: auto
+      @include mobile
+        height: 10rem
+  .title
+    background-color: $light-black
+    color: white
+    margin-bottom: 0rem
+    text-align: center
+    padding-top: 5px
+    display: flex
+    flex-direction: column
+    .texto
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-content: center    
+      .h1
+        font-size: 2rem
+        margin-left: 6rem
         h1
-            margin: 0
+          margin: 0rem !important
+          padding-top: 1.7rem
+          @include laptop
+            font-size: 1.5rem
+          @include mobile
+            font-size: 1.5rem
             padding: 1rem 0rem
-            font-size: 2rem
-            @include laptop
-                font-size: 1.5rem
-            @include mobile
-                font-size: 1.5rem
-                padding: 1rem 0rem
-        .line1
-            width: 100%
-            height: 0.2rem
-            border-top: 1px solid $light-brown
-            border-bottom: 1px dashed $light-brown
-        .line2
-            width: 100%
-            height: 0.5rem
-            background-color: $light-brown
-    .suggestions
+      .p  
+        margin: 0
+        margin-left: 1rem
+        font-size: 1.5rem
+        font-family: Candara
+      .state
+        margin-left: 34rem
+        margin-top: 0rem
+        font-size: 1.5rem
+    .line1
+      width: 100%
+      height: 0.2rem
+      border-top: 1px solid $light-brown
+      border-bottom: 1px dashed $light-brown
+    .line2
+      width: 100%
+      height: 0.5rem
+      background-color: $light-brown
+  .suggestions
+    display: flex
+    flex-direction: column
+    font-family: Myriad
+    margin-bottom: 1rem
+    img
+      margin-top: 3rem 
+      width: 80%
+      align-self: center
+    .slider
+      display: flex
+      flex-direction: row
+      align-content: center
+      justify-content: center
+      .image1, .image2, .image3
+        display: flex
+        flex-direction: column
+        width: 25%
+        text-align: center
+        margin: 0rem 1rem
+        img 
+          width: 20rem
+          height: auto
+      .image1, .image2
+        img 
+          width: 100%
+          height: auto
+        h4 
+          font-size: 2rem
+          margin: 0rem
+          margin-top: 1rem
+      .image3
+        background-color: $light-brown
+        color: white
+        width: 20rem
+        height: 20rem
+        border-radius: 10px
+        font-size: 1.5rem
+        margin-top: 3rem
+        p  
+          margin: 0rem !important
+          font-size: 2rem
+          font-weight: normal
+        h4  
+          font-size: 2.5rem
+          margin: 1rem
+        
+
+  .map
+    background-color: #000
+    .header
+      text-align: center
+      color: white
+      font-size: 1.5rem
+      padding: 1rem 0rem
+      h3
+        margin: 0px
+        font-weight: normal
+        font-size: 1.6rem
+    .content
+      display: flex
+      justify-content: center
+      flex-direction: column
+      iframe
+        @include laptop
+          height: 300
+        @include mobile
+          height: 15rem
+          width: 100%
+      .sections
         display: flex
         flex-direction: row
+        justify-content: space-around
         align-items: center
-        justify-content: center
-        margin-top: 2.5rem
-        .line
-            height: 0.25rem
-            background-color: $light-brown
-            width: 25rem
-        img
-            width: 100%
-            height: auto
-        h3
-            color: $light-brown
-            margin: 0px 1rem
-            font-size: 1.5rem
-    .map
-        background-color: #000
-
-        .header
-            text-align: center
-            color: white
-            font-size: 1.5rem
-            padding: 1rem 0rem
-            h3
-                margin: 0px
-                font-weight: bold
-                font-size: 1.6rem
-        .content
+        color: white
+        font-size: 1.5rem
+        padding: 3rem 2rem 5rem 2rem
+        @include mobile
+          flex-direction: column
+          display: none
+        h4
+          font-weight: normal
+          @include laptop
+            font-size: 1.3rem
+          @include mobile
+            font-size: 1.2rem
+        .social
+          display: flex
+          flex-direction: column
+          .logos
             display: flex
-            justify-content: center
+            flex-direction: row
+            @include mobile
+              align-content: center
+            .image
+              margin-left: 1rem
+              margin-top: 1rem
+              img
+                width: 4rem
+                height: auto
+                @include mobile
+                    width: 2rem
+          .rights
+            margin-top: 2rem
+            @include mobile
+              margin: 1rem 0rem
+            p
+              font-size: 1rem
+              text-align: center
+              diplay: block
+              margin: 0                      
+
+        .contact
+          align-self: flex-start
+          @include mobile
+            text-align: center
+          h4
+            font-size: 1.2rem
+            margin: 0
+            font-weight: bold
+            margin-left: 38px
+            @include mobile
+              margin: 0
+          .item
+            .icon
+              font-size: 0.8rem
+              display: inline-block
+            .text
+              display: inline-block
+              p
+                margin: 0
+                font-size: 1rem
+
+        .time
+          min-width: 20%
+          @include mobile
+            text-align: center
+            margin-top: 1rem
+            margin-bottom: 0rem
+          h4
+            font-size: 1.2rem
+            margin: 0
+            font-weight: bold
+          p
+            margin: 5px 0
+            font-size: 1rem
+
+        .brand
+          display: flex
+          align-content: flex-end
+          margin-right: -2rem
+          @include mobile
+            margin-top: 2rem
+          img
+            height: 10rem
+            width: auto
+
+      .sections-mobile
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: white
+        @include laptop
+          display: none
+        @include desktop
+          display: none
+        h4
+          font-weight: normal
+          font-size: 1rem                
+        .time-social-mobile
+          display: flex
+          flex-direction: row
+          justify-content: space-around
+          margin-top: 1rem
+          .logos-mobile
+            display: flex
             flex-direction: column
-            iframe
-                @include laptop
-                    height: 300
-                @include mobile
-                    height: 15rem
-                    width: 100%
-            .sections
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center
-                color: white
-                font-size: 1.5rem
-                padding: 3rem 2rem 5rem 2rem
-                @include mobile
-                    flex-direction: column
-                    display: none
-                h4
-                    font-weight: normal
-                    @include laptop
-                        font-size: 1.3rem
-                    @include mobile
-                        font-size: 1.2rem
-                .social
-                    display: flex
-                    flex-direction: column
-                    .logos
-                        display: flex
-                        flex-direction: row
-                        @include mobile
-                            align-content: center
-                        .image
-                            margin-left: 1rem
-                            margin-top: 1rem
-                            img
-                                width: 4rem
-                                height: auto
-                                @include mobile
-                                    width: 2rem
-                    .rights
-                        margin-top: 2rem
-                        @include mobile
-                            margin: 1rem 0rem
-                        p
-                          font-size: 1rem
-                          text-align: center
-                          diplay: block
-                          margin: 0
-                        
-
-                .contact
-                    @include mobile
-                        text-align: center
-                    h4
-                      font-size: 1.2rem
-                      margin: 0
-                      font-weight: bold
-                      margin-left: 38px
-                      @include mobile
-                        margin: 0
-                    .item
-                        .icon
-                            min-width: 30px
-                            display: inline-block
-                        .text
-                            display: inline-block
-                            p
-                              margin: 5px 0
-                              font-size: 1rem
-
-                .time
-                  min-width: 20%
-                  @include mobile
-                    text-align: center
-                    margin-top: 1rem
-                    margin-bottom: 0rem
-                  h4
-                    font-size: 1.2rem
-                    margin: 0
-                    font-weight: bold
-                  p
-                    margin: 5px 0
-                    font-size: 1rem
-                .brand
-                  position: absolute
-                  right: 1rem
-                  display: flex
-                  align-content: flex-end
-                  @include mobile
-                    margin-top: 2rem
-                  img
-                      height: 10rem
-                      width: auto
-                
-            .sections-mobile
-                display: flex
-                flex-direction: column
-                align-items: center
-                color: white
-                @include laptop
-                    display: none
-                @include desktop
-                    display: none
-                h4
-                    font-weight: normal
-                    font-size: 1rem                
-                .time-social-mobile
-                    display: flex
-                    flex-direction: row
-                    justify-content: space-around
-                    margin-top: 1rem
-                    .logos-mobile
-                        display: flex
-                        flex-direction: column
-                        align-content: center
-                        margin-left: 1rem
-                        margin-top: 1.2rem
-                        .image-mobile
-                            margin-left: 1rem
-                            margin-top: 0.5rem
-                            img
-                                width: 2rem
-                                height: auto
-                    .time-mobile
-                        min-width: 20%
-                        text-align: center
-                        margin-top: 1rem
-                        margin-bottom: 0rem
-                        h4
-                            font-size: 1.2rem
-                            margin: 0
-                            font-weight: bold
-                        p
-                            margin: 5px 0
-                            font-size: 1rem 
-                .contact-mobile
-                    text-align: center
-                    margin-top: 1rem
-                    h4
-                        font-size: 1.2rem
-                        font-weight: bold
-                        margin: 0
-                    .item-mobile
-                        .icon-mobile
-                            min-width: 30px
-                            display: inline-block
-                        .text-mobile
-                            display: inline-block
-                            p
-                              margin: 5px 0
-                              font-size: 1rem
-                .rights-mobile
-                    margin: 1rem 0rem
-                    p
-                        font-size: 1rem
-                        text-align: center
-                        diplay: block
-                        margin: 0                
-                .brand-mobile
-                    margin-top: -3.5rem
-                    transform: rotate(90deg)
-                    img
-                        height: 10rem
-                        width: auto
+            align-content: center
+            margin-left: 1rem
+            margin-top: 1.2rem
+            .image-mobile
+              margin-left: 1rem
+              margin-top: 0.5rem
+              img
+                width: 2rem
+                height: auto
+          .time-mobile
+            min-width: 20%
+            text-align: center
+            margin-top: 1rem
+            margin-bottom: 0rem
+            h4
+              font-size: 1.2rem
+              margin: 0
+              font-weight: bold
+            p
+              margin: 5px 0
+              font-size: 1rem 
+        .contact-mobile
+          text-align: center
+          margin-top: 1rem
+          h4
+            font-size: 1.2rem
+            font-weight: bold
+            margin: 0
+          .item-mobile
+            .icon-mobile
+              min-width: 30px
+              display: inline-block
+            .text-mobile
+              display: inline-block
+              p
+                margin: 5px 0
+                font-size: 1rem
+        .rights-mobile
+          margin: 1rem 0rem
+          p
+            font-size: 1rem
+            text-align: center
+            diplay: block
+            margin: 0                
+        .brand-mobile
+          margin-top: -3.5rem
+          transform: rotate(90deg)
+          img
+            height: 10rem
+            width: auto

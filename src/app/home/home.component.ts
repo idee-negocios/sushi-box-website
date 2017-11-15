@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         visible: true
       },
       load: 2,
-      touch: false,
+      touch: true,
       easing: 'ease',
       loop: true
     }

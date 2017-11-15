@@ -1,6 +1,7 @@
 @import "../../../../node_modules/bootstrap/scss/bootstrap"
 @import "../../../colors.sass"
 @import "../../../responsive.sass"
+
 .line
     width: 100%
     height: 0.5rem
@@ -9,32 +10,33 @@
 .navbar
     background-color: white !important
     margin: 0
-    font-family: Helvetica
+    font-family: Myriad
     display: flex
-    align-items: flex-end;
+    flex-direction: row
+    align-items: center;
+    justify-content: center !important
+    align-content: center
     padding: 0;
     @include mobile
         display: none
     .logo
-        padding-left: 10%;
-        padding-top: 25px;
-        padding-bottom: 8px;
-        margin-right: 10%;
+        padding-left: 6rem        
         img
-            width: 6rem
-            height: 6rem
+            width: 5rem
+            height: 5rem
     .menu
       display: flex
       flex-direction: column
-      align-items: flex-end
+      align-items: center
       padding-right: 5%
-
       .navbar-nav
           display: flex
           justify-content: center
-          font-size: 1rem
-          font-weight: bold
+          font-size: 1.2rem
+          font-family: Myriad
           text-transform: uppercase
+          margin: 0rem !important
+          margin-left: -6rem !important
           li > a
               color: $light-black
               padding: 1rem
@@ -44,14 +46,23 @@
               color: #fff
 
     .search-form
+        margin: 0rem !important
+        padding-top: 1.5rem
+        align-self: flex-end
         button
             background-color: #eee
             color: #000
-            border: 1px solid #000
+            border: 1px solid $light-black
+            border-radius: 10px
+            height: 2.2rem
+            width: auto
         input
             background-color: #eee
             color: #fff
-            border: 1px solid #000
+            border: 1px solid $light-black
+            border-radius: 10px
+            height: 2.2rem
+            width: auto
 
 .separator
     width: 80%;
