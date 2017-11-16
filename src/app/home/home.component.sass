@@ -87,17 +87,22 @@
       text-align: center
       color: $light-brown
       font-family: Myriad
+      font-weight: lighter
       @include desktop
         display: none
       @include laptop
         display: none
     .separator
-      @include mobile
-        display: none
+      display: flex
+      justify-content: center
       img
-        margin-top: 3rem 
+        margin-top: 3rem
+        margin-bottom: 1rem
         width: 80%
         align-self: center
+      @include mobile
+        display: none
+      
 
     .slider
       display: flex
@@ -130,7 +135,10 @@
         height: 20rem
         border-radius: 10px
         font-size: 1.5rem
-        margin-top: 3rem
+        margin-top: 0rem
+        @include desktop
+          width: 25rem
+          height: 25rem          
         @include mobile
           margin-top: 1rem
           width: 90%
@@ -139,9 +147,14 @@
           margin: 0rem !important
           font-size: 2rem
           font-weight: normal
+          @include desktop
+            font-size: 2.5rem
         h4  
           font-size: 2.5rem
           margin: 1rem
+          @include desktop
+            font-size: 3rem
+            margin-top: 2rem
         
 
   .map
