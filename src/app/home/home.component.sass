@@ -11,7 +11,7 @@
   ngx-tile
     img
       background-color: #ccc
-      height: 36rem
+      height: auto
       width: 100%
       text-align: center
       line-height: 300px
@@ -19,6 +19,7 @@
         height: auto
       @include mobile
         height: 10rem
+        
   .title
     background-color: $light-black
     color: white
@@ -26,20 +27,25 @@
     text-align: center
     padding-top: 5px
     display: flex
-    flex-direction: column
+    flex-direction: column 
+    border-top: 1px solid $light-black
+    margin-top: 3.7rem !important
+    @include laptop
+      border: none
+      margin-top: 0rem
     .texto
       display: flex
       flex-direction: row
       justify-content: flex-start
-      align-content: center    
+      align-content: center  
       .h1
-        font-size: 2rem
+        font-size: 1.5rem
         margin-left: 6rem
         h1
           margin: 0rem !important
-          padding-top: 1.7rem
+          padding-top: 0.6rem
           @include laptop
-            font-size: 1.5rem
+            padding-top: 1.7rem
           @include mobile
             font-size: 1.5rem
             padding: 1rem 0rem
@@ -211,7 +217,9 @@
         .brand
           display: flex
           align-content: flex-end
-          margin-right: -2rem
+          margin-right: -5rem
+          @include laptop
+            margin-right: -2rem
           @include mobile
             margin-top: 2rem
           img
