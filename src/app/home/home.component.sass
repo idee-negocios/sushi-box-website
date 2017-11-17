@@ -111,7 +111,7 @@
       justify-content: center
       @include mobile
         flex-direction: column
-      .image1, .image2, .image3
+      .image1, .image2
         display: flex
         flex-direction: column
         width: 25%
@@ -119,42 +119,14 @@
         margin: 0rem 1rem
         @include mobile
           width: 90%
-          margin: 0% 5%
-      .image1, .image2
+          margin: 0% 5%      
         img 
           width: 100%
           height: auto
         h4 
           font-size: 2rem
           margin: 0rem
-          margin-top: 1rem
-      .image3
-        background-color: $light-brown
-        color: white
-        width: 20rem
-        height: 20rem
-        border-radius: 10px
-        font-size: 1.5rem
-        margin-top: 0rem
-        @include desktop
-          width: 25rem
-          height: 25rem          
-        @include mobile
-          margin-top: 1rem
-          width: 90%
-          height: 19rem
-        p  
-          margin: 0rem !important
-          font-size: 2rem
-          font-weight: normal
-          @include desktop
-            font-size: 2.5rem
-        h4  
-          font-size: 2.5rem
-          margin: 1rem
-          @include desktop
-            font-size: 3rem
-            margin-top: 2rem
+          margin-top: 1rem      
         
 
   .map
